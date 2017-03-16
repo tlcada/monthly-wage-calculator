@@ -1,0 +1,15 @@
+{
+  "name": "monthly-wage-calculator",
+  "description": "Initializer",
+  "engines": {
+    "node": "6.9.2"
+  },
+  "scripts": {
+    "postinstall": "cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlcada/monthly-wage-calculator.git"
+  }
+}

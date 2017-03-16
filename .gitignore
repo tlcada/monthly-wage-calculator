@@ -1,0 +1,15 @@
+.idea
+node_modules
+
+server/npm-debug.log
+server/node_modules
+server/**/*.js
+server/**/*.d.ts
+server/**/*.js.map
+server/**/**/*.js
+server/**/**/*.d.ts
+server/**/**/*.js.map
+
+client/node_modules
+client/dist/assets/*.js
+client/dist/assets/*.js.map
