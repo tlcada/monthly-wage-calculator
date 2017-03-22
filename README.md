@@ -2,6 +2,8 @@
 
 Calculate monthly wage for every person based on the multiple CSV working hours files.
 
+Live demo: https://protected-island-96356.herokuapp.com
+
 ## Install packages
 
 Run command in the root directory.
