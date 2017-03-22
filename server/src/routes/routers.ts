@@ -15,6 +15,7 @@ router.get('/wage', async (ctx, next) => {
         ctx.body = await wageCalculation.getMonthlyWage();
     } catch (err) {
         logger.error('Error occurred', {details: err.message});
+        ctx.status = 404;
         ctx.body = {'message': 'no results found'};
     }
 });
