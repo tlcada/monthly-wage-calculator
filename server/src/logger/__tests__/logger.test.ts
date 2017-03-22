@@ -18,7 +18,10 @@ class LoggerTest {
 
     @test('Write an error msg to error.log file')
     assert_file_content(done: Function) {
-        fs.unlinkSync('./logs/error.log');
+        const logFile: string = './logs/error.log';
+        if (fs.existsSync(logFile)) {
+            fs.unlinkSync(logFile);
+        }
         this.logger.error('Test an error message', {details: 'logger test'});
         setTimeout(() => {
             assert.notIsEmptyFile('./logs/error.log', 'file content is empty');
