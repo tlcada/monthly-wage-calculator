@@ -19,7 +19,7 @@ class WageCalculationTest {
         const monthlyWage = this.wageCalculation.getMonthlyWage();
         expect(monthlyWage).to.be.an('object');
         expect(monthlyWage['Janet Java']['3/2017']).to.equal(701.61);
-        expect(monthlyWage['Scott Scala']['3/2017']).to.equal(648.14);
+        expect(monthlyWage['Scott Scala']['3/2017']).to.equal(657.34);
         expect(monthlyWage['Larry Lolcode']['3/2017']).to.equal(377.01);
         done();
     }

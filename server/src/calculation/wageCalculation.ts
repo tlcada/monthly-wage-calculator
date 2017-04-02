@@ -128,6 +128,9 @@ class WageCalculation {
                     eveningWorkHours += this.getDuration(startTime, eveningTimeEnd);
                 }
             }
+        // Match, for example 22:00 - 06:00
+        } else if ((startTime >= eveningTimeStart && endTime >= eveningTimeStart) && dayHasChanged) {
+            eveningWorkHours = this.getDuration(startTime, endTime);
         }
 
         return eveningWorkHours;
