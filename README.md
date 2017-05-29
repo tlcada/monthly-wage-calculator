@@ -49,7 +49,7 @@ Run command in the root directory.
 
 Start Webpack development server.
    
-    npm run start
+    npm start
 
 ## For development purpose -  Server side
 
