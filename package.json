@@ -6,7 +6,8 @@
   },
   "scripts": {
     "postinstall": "cd client && npm install && cd ../server && npm install",
-    "start": "cd server && npm start"
+    "start": "cd server && npm start",
+    "test": "cd client && npm test && cd ../server && npm test"
   },
   "repository": {
     "type": "git",

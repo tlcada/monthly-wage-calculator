@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wage component should render as expected 1`] = `
+<div>
+  <Table
+    bordered={false}
+    bsClass="table"
+    condensed={false}
+    hover={true}
+    responsive={false}
+    striped={true}
+  >
+    <thead>
+      <tr>
+        <th>
+          Person Name
+        </th>
+        <th>
+          Wage
+        </th>
+        <th>
+          Month
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </Table>
+</div>
+`;

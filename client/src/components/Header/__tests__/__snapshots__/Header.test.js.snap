@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render as expected 1`] = `
+<Uncontrolled(Navbar)
+  bsStyle="default"
+>
+  <NavbarHeader>
+    <NavbarBrand>
+      <Link
+        replace={false}
+        to="/"
+      >
+        Monthly Wage Calculator
+      </Link>
+    </NavbarBrand>
+    <NavbarToggle />
+  </NavbarHeader>
+</Uncontrolled(Navbar)>
+`;
