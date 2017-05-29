@@ -1,5 +1,6 @@
 .idea
 node_modules
+yarn.lock
 
 server/npm-debug.log
 server/node_modules
@@ -11,5 +12,5 @@ server/**/**/*.d.ts
 server/**/**/*.js.map
 
 client/node_modules
-client/dist/assets/*.js
-client/dist/assets/*.js.map
+client/dist/
+client/dist/

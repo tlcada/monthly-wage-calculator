@@ -1,19 +1,14 @@
-'use strict';
-
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {AppContainer} from 'react-hot-loader'
-import App from './appContainer'
-import './components/app/app.scss'
+import { install } from 'offline-plugin/runtime'
 
-const render = Component => {
-    ReactDOM.render(<AppContainer><Component /></AppContainer>, document.getElementById('app'))
-};
+import './base.scss'
+import App from './components/App/App'
 
-render(App);
+ReactDOM.render(
+  <App />, document.getElementById('app')
+)
 
-if (module.hot) {
-    module.hot.accept('./appContainer', () => {
-        render(App)
-    })
+if (process.env.NODE_ENV === 'production') {
+  install()
 }

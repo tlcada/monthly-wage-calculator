@@ -1,5 +1,9 @@
 {
-  "presets": [
-    ["es2015", {"modules": false}], "react"
-  ]
+  "plugins": ["transform-react-jsx"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  },
+  "presets": [["es2015", {"modules": false}]]
 }

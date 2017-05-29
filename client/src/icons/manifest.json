@@ -1,0 +1,9 @@
+{
+  "name": "Monthly Wage Calculator",
+  "short_name": "Wage Calculator",
+  "lang": "fi-FI",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#00BCD4"
+}
