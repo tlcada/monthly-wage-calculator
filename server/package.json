@@ -3,24 +3,25 @@
   "version": "1.0.0",
   "description": "Calculate a monthly wage of employees",
   "main": "src/server.js",
+  "lisence": "MIT",
+  "author": "tlcada",
   "scripts": {
     "test": "tsc -p . && mocha **/__tests__/*.js",
-    "start:dev": "tsc && concurrently \"tsc -w\" \"nodemon src/server.js\"",
-    "start": "tsc && node src/server.js"
+    "start:dev": "tsc && nodemon",
+    "start": "tsc && cross-env NODE_ENV=production node src/server.js"
   },
   "keywords": [
     "typescript",
     "node",
     "koa"
   ],
-  "author": "tlcada",
-  "license": "ISC",
   "dependencies": {
     "@types/koa": "^2.0.37",
     "chai": "^3.5.0",
     "chai-fs": "^1.0.0",
     "chai-http": "^3.0.0",
     "concurrently": "^3.4.0",
+    "cross-env": "^5.0.0",
     "csv-parse": "^1.2.0",
     "koa": "^2.0.0-alpha.7",
     "koa-cors": "0.0.16",
@@ -31,6 +32,7 @@
     "mocha-typescript": "^1.0.22",
     "moment": "^2.17.1",
     "nodemon": "^1.11.0",
+    "ts-node": "^3.0.4",
     "tslint": "^4.5.1",
     "typescript": "^2.2.1",
     "winston": "^2.3.1"
