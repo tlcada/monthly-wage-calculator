@@ -1,8 +1,6 @@
-'use strict';
-
 import * as Koa from 'koa';
 import config from '../config/config';
-import router from './routes/routers';
+import router from './routes/Routers';
 import * as swagger from 'koa2-swagger-ui';
 import * as serve from 'koa-static';
 import * as cors from 'koa-cors';

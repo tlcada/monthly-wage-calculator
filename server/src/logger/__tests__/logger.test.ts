@@ -1,7 +1,5 @@
-'use strict';
-
 import {suite, test} from "mocha-typescript";
-import Logger from '../logger';
+import Logger from '../Logger';
 
 const fs = require('fs');
 const chai = require('chai');

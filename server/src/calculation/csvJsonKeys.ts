@@ -1,5 +1,5 @@
 /* For the TypeScript */
-interface CsvJSONKeys {
+interface CsvJsonKeys {
     readonly personName: string;
     readonly personId: number;
     readonly date: string;

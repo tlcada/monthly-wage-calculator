@@ -1,14 +1,12 @@
-'use strict';
-
 import {suite, test} from "mocha-typescript";
-import CsvReader from '../csvReader';
+import CsvReader from '../CsvReader';
 
 const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-fs'));
 
 @suite('CSV Reader')
-class ReaderTest {
+class CsvReaderTest {
     private csvReader: CsvReader;
 
     constructor() {
@@ -29,7 +27,7 @@ class ReaderTest {
 
     @test('Read CSV file content and test new JSON keys')
     should_be_content(done: Function) {
-        let parsedCsvData: Array<CsvJSONKeys> = this.csvReader.readFilesFromDirectory<CsvJSONKeys>('./files/hour_lists/');
+        let parsedCsvData: Array<CsvJsonKeys> = this.csvReader.readFilesFromDirectory<CsvJsonKeys>('./files/hour_lists/');
         expect(parsedCsvData).to.be.a('array');
         expect(parsedCsvData[0]).to.have.property('personName');
         expect(parsedCsvData[0]).to.have.property('personId');

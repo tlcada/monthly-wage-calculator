@@ -1,5 +1,3 @@
-'use strict';
-
 const environment = process.env.NODE_ENV || 'production';
 
 const config = {

@@ -1,9 +1,7 @@
-'use strict';
-
-import WageCalculation from '../calculation/wageCalculation';
+import WageCalculation from '../Calculation/WageCalculation';
 import * as Router from 'koa-router';
 import apiDocumentation from '../../api/swagger';
-import LoggerClass from '../logger/logger';
+import LoggerClass from '../logger/Logger';
 
 const logger = new LoggerClass();
 const wageCalculation = new WageCalculation();

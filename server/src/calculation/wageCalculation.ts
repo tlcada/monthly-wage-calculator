@@ -1,6 +1,4 @@
-'use strict';
-
-import CsvReaderClass from '../reader/csvReader';
+import CsvReaderClass from '../Reader/CsvReader';
 import * as moment  from 'moment';
 
 const newJsonKeys = ['personName', 'personId', 'date', 'startTime', 'endTime'];
@@ -16,7 +14,7 @@ class WageCalculation {
         const OVERTIME_MULTIPLIERS = [0.25, 0.50, 1.00];
 
         let wage: any = {};
-        let combinedWorkingHours: Array<CsvJSONKeys> | Error;
+        let combinedWorkingHours: Array<CsvJsonKeys> | Error;
 
         try {
             // Create a new JSON data that contains the person's working hours per day
@@ -76,12 +74,12 @@ class WageCalculation {
         return wage;
     }
 
-    private combineWorkingHoursOfDay(): Array<CsvJSONKeys> {
+    private combineWorkingHoursOfDay(): Array<CsvJsonKeys> {
         let timeRegistrations: any = {};
-        let parsedCsvData: Array<CsvJSONKeys>;
+        let parsedCsvData: Array<CsvJsonKeys>;
 
         try {
-            parsedCsvData = csvReader.readFilesFromDirectory<CsvJSONKeys>('./files/hour_lists/');
+            parsedCsvData = csvReader.readFilesFromDirectory<CsvJsonKeys>('./files/hour_lists/');
         } catch (err) {
             throw new Error(err.message);
         }
@@ -90,7 +88,7 @@ class WageCalculation {
             let personWorkingHours: any = {};
 
             const interval: Array<string> = [personObject.startTime + '-' + personObject.endTime];
-            const person: Array<CsvJSONKeys> = timeRegistrations[personObject.personId];
+            const person: Array<CsvJsonKeys> = timeRegistrations[personObject.personId];
             if (person) {
                 const startTimes: Array<string> = person['workingHours'][personObject.date];
                 personWorkingHours[personObject.date] = (startTimes) ? startTimes.concat(interval) : interval;

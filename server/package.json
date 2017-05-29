@@ -1,6 +1,6 @@
 {
   "name": "monthly-wage-calculator-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate a monthly wage of employees",
   "main": "src/server.js",
   "lisence": "MIT",

@@ -1,5 +1,3 @@
-'use strict';
-
 import * as fs from 'fs';
 import * as parse from 'csv-parse/lib/sync';
 

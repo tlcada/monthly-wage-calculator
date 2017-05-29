@@ -1,7 +1,5 @@
-'use strict';
-
 import {suite, test} from "mocha-typescript";
-import WageCalculation from '../wageCalculation';
+import WageCalculation from '../WageCalculation';
 
 const chai = require('chai');
 const expect = chai.expect;

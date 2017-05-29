@@ -1,5 +1,3 @@
-'use strict';
-
 import {suite, test} from "mocha-typescript";
 
 const server = require("../../server");
