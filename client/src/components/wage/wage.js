@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import { Table } from 'react-bootstrap'
 import { Request } from '../Api/Request'
+import config from '../../../config/config'
 
 class Wage extends Component {
   constructor (props) {
@@ -12,7 +13,7 @@ class Wage extends Component {
   }
 
   componentDidMount () {
-    const data = Request()
+    const data = Request(config.apiUrl)
     data.then(json => {
       this.setState({data: [json]})
     }).catch((err) => {

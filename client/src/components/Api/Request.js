@@ -1,10 +1,8 @@
 /* global fetch:false */
-
-import config from '../../../config/config'
 import 'whatwg-fetch'
 
-function Request () {
-  return fetch(config.apiUrl, {
+function Request (apiUrl) {
+  return fetch(apiUrl, {
     method: 'GET',
     headers: {'Content-Type': 'application/json'}
   }).then(response => {
