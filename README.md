@@ -25,25 +25,6 @@ Run command in the root directory.
 ## Rest API documentation
 
     <url>/api
-
-## Server side main technologies
-
-    Node
-    Koa
-    TypeScript
-    Swagger
-    Moment
-    Winston
-    Mocha and Chai
-    CSV Parser
-    
-## Client side main technologies
-
-    React
-    Babel
-    Webpack
-    Sass
-    CSS modules
     
 ## For development purpose - Client side
 
@@ -62,6 +43,25 @@ Run the command on the server side when the app.bundle.js file is up to date. Bu
 Create files to the dist folder.
 
     npm run build
+    
+## Server side main technologies
+
+    Node
+    Koa
+    TypeScript
+    Swagger
+    Moment
+    Winston
+    Mocha and Chai
+    CSV Parser
+    
+## Client side main technologies
+
+    React
+    Babel
+    Webpack
+    Sass
+    CSS modules
 
 ## Jest tips - Client side
 
@@ -71,4 +71,3 @@ Create files to the dist folder.
     - npm test -- --coverage 
 - Update snapshots   
     - npm test -- -u
-    
