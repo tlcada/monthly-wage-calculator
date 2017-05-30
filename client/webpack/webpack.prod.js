@@ -29,11 +29,11 @@ module.exports = {
     },
     devtool: 'source-map',
     performance: {
-        hints: 'error'
+        hints: 'warning'
     },
     resolve: {
         alias: {
-            react: 'preact-compat',
+            'react': 'preact-compat',
             'react-dom': 'preact-compat'
         }
     },
