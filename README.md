@@ -63,7 +63,7 @@ Create files to the dist folder.
 
     npm run build
 
-## Jest tips
+## Jest tips - Client side
 
 - Watch test changes  
     - npm test -- --watch
