@@ -6,8 +6,8 @@
   "lisence": "MIT",
   "author": "tlcada",
   "scripts": {
-    "build": "webpack -p --config=webpack/webpack.prod.js",
-    "start": "webpack-dashboard -- webpack-dev-server --config=webpack/webpack.dev.js",
+    "build": "webpack -p --config ./webpack/webpack.prod.js",
+    "start": "webpack-dashboard -- webpack-dev-server --config ./webpack/webpack.dev.js",
     "test": "jest"
   },
   "keywords": [
