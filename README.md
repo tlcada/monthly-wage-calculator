@@ -18,7 +18,7 @@ Run command in the root directory.
     
 ## Run tests
 
-Run command in the root directory. 
+Run command in the root directory. You have to start server side first (npm run start:dev) if you want to pass all the tests.
 
     npm test
     
